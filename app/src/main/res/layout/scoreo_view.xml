@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center">
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TextView
+                android:layout_width="400dp"
+                android:layout_height="500dp"
+                android:background="@drawable/gradient_score"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="150dp"
+                android:textColor="@color/white"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="★합격★"
+                    android:layout_gravity="center"
+                    android:textColor="@color/yellow"
+                    android:textSize="50dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=" 합격을 축하합니다 !"
+                    android:textColor="@color/white"
+                    android:textSize="40dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:id="@+id/text_pass_score"
+                    android:text="100 점"
+                    android:textSize="100dp"
+                    android:textColor="@color/yellow"/>
+            </LinearLayout>
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="bottom"
+        android:layout_height="30dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <android.widget.Button
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gradient_text"
+            android:id="@+id/checkview_pass_back"
+            android:text="메인으로"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</LinearLayout>
